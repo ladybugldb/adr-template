@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# Creates a new ADR:
+#   - Calculates ADR number and filename
+#   - Creates template file
+#   - Adds link to README.md (only to the time-based list)
+
+set -e
+
+# Parse command-line arguments
+if [[ -z $1 || ! -z $2 ]]; then
+	echo 'Usage: new-adr "ADR title"'
+	exit 1
+fi
+
+title="$1"
+
+# Calculate filename
+name=$(echo -n "$1" | tr '[:upper:]' '[:lower:]' | tr -d '.:?!$%' | tr ' ' '-')
+max_adr_num=$(ls adr/0*.md | sed -e 's/adr.//' | sed 's/-.*//' | sort | tail -1 | sed 's/^0*//')
+let adr_num=$max_adr_num+1
+filename="adr/$(printf "%04d" $adr_num)-${name}.md"
+
+# Get date
+adr_date=$(date "+%m/%d/%Y")
+
+# Create ADR file
+{
+	echo "# ${adr_num}. ${title}"
+	echo ""
+	echo "Date: ${adr_date}"
+	tail +4 adr/_template.md
+} > $filename
+
+# Append to README.md
+echo "* ADR ${adr_num}: [${title}](${filename}) - Proposed" >> README.md
+
+echo "Created new ADR: $filename"
+
