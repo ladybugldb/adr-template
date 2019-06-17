@@ -6,10 +6,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) about when and how to create new ADRs.
 
 ## Reference documents
 
-* [System Architecture](doc/system-architecture.md)
-* [Release Process](doc/release-process.md)
-* [Alerting Best Practices](doc/alerting-best-practices.md)
-* [User Workflows](doc/user-workflows.md)
 
 ## ADRs by topic
 
