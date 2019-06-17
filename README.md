@@ -5,7 +5,7 @@ This repository contains a log of architectural decisions made for the Watson fo
 See [CONTRIBUTING.md](CONTRIBUTING.md) about when and how to create new ADRs.
 
 ## Reference documents
-
+ADR 1: [Record archictectural decisions](adr/0001-record-archictectural-decisions.md) - Accepted
 
 ## ADRs by topic
 
@@ -22,18 +22,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) about when and how to create new ADRs.
 
 * 
 ### APIs
-
-* 
-
-### VP Tools
-
-* 
-
-### Transfer
-
-* 
-
-### Catcher 
 
 * 
 
