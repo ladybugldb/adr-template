@@ -67,17 +67,17 @@ several ADRs.
 
 1. When you make a significant change (create an ADR, modify it significantly),
    create a pull request to this repo. It will send a notification to the
-   `#wm-vlm-adr` channel. If your modification is minor (e.g. fixing a typo or
+   `#xxxxxxxxxx` channel. If your modification is minor (e.g. fixing a typo or
    a broken link), it is OK to push to the master branch directly.
 2. Each team should have at least one person who is responsible for reviewing
    ADRs. One person from each team should write a review to the pull request
    within a day.
 3. The pull request can be merged if there is an OK reaction from every team.
    There are no write restrictions, anybody can press the merge button.
-4. When the pull request is merged, the merger **MUST** notify the `#wm-vlm-adr`
+4. When the pull request is merged, the merger **MUST** notify the `#xxxxxxxxxx`
    channel so that the whole team is notified about the change.
 
-The `#wm-vlm-adr` channel is used for meta-ADR issues like the following:
+The `#xxxxxxxxxx` channel is used for meta-ADR issues like the following:
 
 - Asking each other to write or clarify ADRs
 - Asking whether something is ADR material or not
